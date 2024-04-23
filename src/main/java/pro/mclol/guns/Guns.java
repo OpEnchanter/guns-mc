@@ -89,7 +89,7 @@ public final class Guns extends JavaPlugin implements Listener, CommandExecutor 
                 blockDist = distanceBetweenPoints(playerHeadLocation, blockTrace.getHitBlock().getLocation());
             }
 
-            if (entityDist < blockDist || blockTrace == null){
+            if (blockTrace == null || entityDist < blockDist){
                 LivingEntity hitEntity = (LivingEntity) entityTrace.getHitEntity();
                 hitEntity.damage(damage);
             }
