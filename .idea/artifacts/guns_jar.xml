@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="guns:jar">
+    <output-path>$USER_HOME$/Desktop/MCLOL TEST SERVER/plugins</output-path>
+    <root id="archive" name="guns.jar">
+      <element id="module-output" name="guns" />
+    </root>
+  </artifact>
+</component>

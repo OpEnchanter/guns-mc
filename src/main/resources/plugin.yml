@@ -1,0 +1,8 @@
+name: guns
+version: '${project.version}'
+main: pro.mclol.guns.Guns
+api-version: '1.20'
+commands:
+  gun:
+    description: Gives you a gun
+    usage: /<command>
