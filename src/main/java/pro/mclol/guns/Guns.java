@@ -74,6 +74,7 @@ public final class Guns extends JavaPlugin implements Listener, CommandExecutor 
         if(!player.getInventory().getItemInMainHand().getItemMeta().hasLore()) { return; }
 
         if (player.getInventory().getItemInMainHand().getItemMeta().getLore().equals(gun.getItemMeta().getLore())){
+            event.setCancelled(true);
             Location playerHeadLocation = player.getEyeLocation();
             Vector playerHeadRotation = playerHeadLocation.getDirection();
             RayTraceResult entityTrace = player.getWorld().rayTraceEntities(playerHeadLocation.add(playerHeadRotation), playerHeadRotation, distance);
